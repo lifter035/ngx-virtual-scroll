@@ -1,0 +1,30 @@
+{
+  "name": "ngx-virtual-scroll",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DineroRegnskab/ngx-virtual-scroll"
+  },
+  "author": {
+    "name": "dineroregnskab",
+    "email": "info@dinero.dk"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "ngx",
+    "virtualscroll",
+    "ngx-virtual-scroll"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DineroRegnskab/ngx-virtual-scroll/issues"
+  },
+  "module": "ngx-virtual-scroll.js",
+  "typings": "ngx-virtual-scroll.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
