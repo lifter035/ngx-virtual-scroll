@@ -35,10 +35,10 @@ export class VirtualScrollForDirective implements AfterViewInit, OnChanges, OnDe
 
     @Input() scrollToIndex$: EventEmitter<number> = new EventEmitter<number>();
 
-    @Input() useWindowScroll: boolean = false;
-    @Input() containerHeight: number = 0;
-    @Input() fixedItemHeight: number = 0;
-    @Input() defaultItemHeight: number = 0;
+    @Input() useWindowScroll = false;
+    @Input() containerHeight = 0;
+    @Input() fixedItemHeight = 0;
+    @Input() defaultItemHeight = 0;
 
     @Input() getItemHeight: (item: ForItem) => number;
     @Input() getIndexScrollTop: () => number;
