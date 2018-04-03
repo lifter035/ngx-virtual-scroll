@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "ngx-virtual-scroll": ["../builds/ngx-virtual-scroll"]
+    },
+    "outDir": "./out-tsc/app",
+    "module": "es2015",
+    "types": []
+  },
+  "include": ["**/*.ts", "./polyfills.ts"],
+  "exclude": ["test.integration.ts", "**/*.spec.ts"]
+}

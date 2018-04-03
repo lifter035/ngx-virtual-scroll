@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../builds/ngx-virtual-scroll",
+  "lib": {
+    "flatModuleFile": "ngx-virtual-scroll",
+    "entryFile": "index.ts",
+    "umdModuleIds": {}
+  }
+}
