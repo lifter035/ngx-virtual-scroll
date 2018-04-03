@@ -16,7 +16,7 @@ import {
 import { WindowRef } from './browser-providers/window';
 import { RequestAnimationFrameRef } from './browser-providers/request-animation-frame';
 
-import { ISubscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 export interface ForItem {}
 export interface Slice {
@@ -61,16 +61,17 @@ export class VirtualScrollForDirective implements AfterViewInit, OnChanges, OnDe
     private _internalScrollTop = 0;
     private _internalScrollHeight = 0;
 
-    private _scrollToIndexSubscription: ISubscription;
+    private _scrollToIndexSubscription: Subscription;
     private _scrollListener: () => void;
 
-    constructor(private _elementRef: ElementRef,
-                private _renderer: Renderer2,
-                private _changeDetectorRef: ChangeDetectorRef,
-                private _zone: NgZone,
-                private _windowRef: WindowRef,
-                private _requestAnimationFrame: RequestAnimationFrameRef) {
-
+    constructor(
+        private _elementRef: ElementRef,
+        private _renderer: Renderer2,
+        private _changeDetectorRef: ChangeDetectorRef,
+        private _zone: NgZone,
+        private _windowRef: WindowRef,
+        private _requestAnimationFrame: RequestAnimationFrameRef
+    ) {
         this.getItemHeight = () => {
             return this.defaultItemHeight;
         };

@@ -1,15 +1,18 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
-    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "ngx-virtual-scroll": ["packages/ngx-virtual-scroll"]
+    },
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
-    "rootDir": "./src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "target": "es5",
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "skipLibCheck": true,
-    "types": []
+    "lib": ["es2017", "dom"],
+    "typeRoots": ["node_modules/@types"]
   }
 }

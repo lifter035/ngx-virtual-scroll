@@ -5,10 +5,6 @@ import { WindowRef, NativeWindowRef } from './browser-providers/window';
 import { RequestAnimationFrameRef, NativeRequestAnimationFrameRef } from './browser-providers/request-animation-frame';
 import { VirtualScrollForDirective } from './virtual-scroll-for.directive';
 
-export * from './browser-providers/window';
-export * from './browser-providers/request-animation-frame';
-export * from './virtual-scroll-for.directive';
-
 @NgModule({
     imports: [
         CommonModule
