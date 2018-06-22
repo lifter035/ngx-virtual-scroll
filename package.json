@@ -14,6 +14,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prepare": "npm run build",
     "// - APPS": "Run Apps in dev and with packaged modules",
     "start": "ng serve --aot",
     "serve:integration": "ng serve --prod --app 1 #requires yarn package",
